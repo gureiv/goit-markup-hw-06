@@ -661,6 +661,11 @@ p {
   height: 1024px;
   z-index: 1;
   background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 .modal {
   position: absolute;
@@ -701,6 +706,7 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close {
   display: block;
@@ -748,6 +754,7 @@ textarea {
   background: var(--main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-button-text {
   display: inline-block;
@@ -759,7 +766,7 @@ textarea {
   color: var(--footer-color);
 }
 .form-button:hover {
-  background: #188ce8;
+  background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -774,7 +781,8 @@ textarea {
   top: 50%;
   left: 42px;
   transform: translateY(-50%);
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-comment {
   position: absolute;
@@ -790,6 +798,7 @@ textarea {
   top: 50%;
   left: 19px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus ~ .form-icon {
   fill: var(--main-color);
@@ -837,17 +846,6 @@ textarea {
 .form-footer {
   width: 358px;
   min-height: 50px;
-}
-.footer-label {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }
 .buttom {
   position: relative;
