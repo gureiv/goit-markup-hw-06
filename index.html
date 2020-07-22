@@ -59,49 +59,54 @@
                 <use href="./img/symbol-defs.svg#Vector61"></use>
               </svg>
             </span>
-            <div class="form-field">
-              <input
-                type="text"
-                name="user-name"
-                id="name"
-                class="form-input"
-                placeholder=" "
-              />
-              <label for="name" class="form-label">Имя</label>
-              <svg class="form-icon" width="12" height="12">
-                <use href="./img/symbol-defs.svg#Vector3"></use>
-              </svg>
-            </div>
-            <div class="form-field">
-              <input
-                type="tel"
-                name="tel"
-                id="tel"
-                class="form-input"
-                placeholder=" "
-              />
-              <label for="tel" class="form-label">Телефон</label>
-              <svg class="form-icon" width="13" height="13">
-                <use href="./img/symbol-defs.svg#Vector1"></use>
-              </svg>
-            </div>
-            <div class="form-field">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="form-input"
-                placeholder=" "
-              />
-              <label for="email" class="form-label">Почта</label>
-              <svg class="form-icon" width="15" height="12">
-                <use href="./img/symbol-defs.svg#Vector21"></use>
-              </svg>
-            </div>
-            <div class="form-field">
-              <label for="comment" class="form-comment">Комментарий</label>
-              <textarea name="comment" id="comment"></textarea>
-            </div>
+            <ul class="form-list">
+              <li class="form-field">
+                <input
+                  type="text"
+                  name="user-name"
+                  id="name"
+                  class="form-input"
+                  placeholder=" "
+                />
+                <label for="name" class="form-label">Имя</label>
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./img/symbol-defs.svg#Vector3"></use>
+                </svg>
+              </li>
+              <li class="form-field">
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  class="form-input"
+                  placeholder=" "
+                />
+                <label for="tel" class="form-label">Телефон</label>
+                <svg class="form-icon" width="13" height="13">
+                  <use href="./img/symbol-defs.svg#Vector1"></use>
+                </svg>
+              </li>
+              <li class="form-field">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-input"
+                  placeholder=" "
+                />
+                <label for="email" class="form-label">Почта</label>
+                <svg class="form-icon" width="15" height="12">
+                  <use href="./img/symbol-defs.svg#Vector21"></use>
+                </svg>
+              </li>
+              <li class="form-field">
+                <textarea
+                  name="comment"
+                  id="comment"
+                  placeholder="Комментарий"
+                ></textarea>
+              </li>
+            </ul>
             <label for="policy" class="form-policy">
               <input
                 type="checkbox"
@@ -115,9 +120,7 @@
                 <a href="" class="form">Условия договора</a>
               </p></label
             >
-            <a href="" class="form-button">
-              <span class="form-button-text">Отправить</span>
-            </a>
+            <button type="submit" class="form-button">Отправить</button>
           </form>
         </div>
       </div>
@@ -500,12 +503,12 @@
                   class="form-footer"
                   placeholder="E-mail"
                 />
-                <a class="buttom" href="">
+                <button type="submit" class="buttom">
                   <svg class="icon-footer" width="24" height="24">
                     <use href="./img/symbol-defs.svg#icon-send1"></use>
                   </svg>
-                  <span class="buttom-text"> Подписаться</span>
-                </a>
+                  Подписаться
+                </button>
               </form>
             </div>
           </div>
